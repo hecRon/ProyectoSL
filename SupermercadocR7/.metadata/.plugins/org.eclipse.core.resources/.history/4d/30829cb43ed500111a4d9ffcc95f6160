@@ -1,0 +1,39 @@
+package isima.videoteca.modelo.dao;
+
+import java.util.List;
+
+//import isima.videoteca.modelo.negocio.Temas;
+//import isima.videoteca.modelo.negocio.Usuarios;
+import isima.videoteca.modelo.negocio.*;
+
+public interface VideotecaDAO {
+
+	void registrarTema(Temas tema);
+	void actualizarTema(Temas tema);
+	void eliminarTema(Temas tema);
+	void obtenerTema(Temas tema);
+	
+	List<Temas>obtenerTemas();
+	
+	void registrarUsuario(Usuarios usuario);
+	void actualizarUsuario(Usuarios usuario);
+	void elimnarUsuario(Usuarios usuario);
+	void obtenerUsuario(Usuarios usuario);
+	
+	List<Usuarios>obtenerUsuarios();
+	
+	void registrarPrestamos(Prestamos prestamos);
+	void actualizarPrestamos(Prestamos prestamos);
+	void eliminarPrestamos(Prestamos Prestamos);
+	//Prestamos void obtenerPrestamos(Integer clave);
+	
+	List<Prestamos>obtenerPrestamos();
+	
+	void registrarProgramaEducativo(ProgramaEducativos programaEducativo);
+	void actualizarProgramaEducativo(ProgramaEducativos programaEducativo);
+	void eliminarProgramaEducativo(ProgramaEducativos programaEducativo);
+	void obtenerProgramaEducativo(ProgramaEducativos programaEducativo);
+	
+	List<ProgramaEducativos>obtenerProgramaEducativo();
+	
+	}

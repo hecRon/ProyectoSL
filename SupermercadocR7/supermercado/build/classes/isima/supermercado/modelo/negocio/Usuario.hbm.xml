@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+  "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+  "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="isima.supermercado.modelo.negocio">
+<class name="Usuario" table="usuario">
+<id name="clave" column="clave">
+<generator class="identity"></generator>
+</id>
+<property name="nombre" column="nombre" type="string" lazy="false"></property>
+<property name="apellido1" column="apellido1" type="string" lazy="false"></property>
+<property name="apellido2" column="apellido2" type="string" lazy="false"></property>
+</class>
+</hibernate-mapping>
+

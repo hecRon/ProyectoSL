@@ -1,0 +1,180 @@
+package isima.videoteca.modelo.dao.hibernate;
+
+import java.util.List;
+
+import isima.videoteca.modelo.dao.VideotecaDAO;
+import isima.videoteca.modelo.negocio.Prestamo;
+import isima.videoteca.modelo.negocio.ProgramaEducativo;
+import isima.videoteca.modelo.negocio.Tema;
+import isima.videoteca.modelo.negocio.Usuario;
+
+import org.springframework.orm.hibernate3.support.HibernateDaoSupport;
+
+public class VideotecaDAOHibernate extends HibernateDaoSupport implements
+		VideotecaDAO {
+
+	@Override
+	public void registrarTema(Tema tema) {
+		this.getHibernateTemplate().save(tema);
+
+		// TODO Auto-generated method stub
+	}
+
+	@Override
+	public void actualizarTema(Tema tema) {
+		this.getHibernateTemplate().update(tema);
+
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void eliminarTema(Tema tema) {
+		this.getHibernateTemplate().delete(tema);
+
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public Tema obtenerTema(Integer clave) {
+	return (Tema) this.getHibernateTemplate().get(Tema.class,clave);
+
+	// TODO Auto-generated method stub
+	}
+
+	@Override
+	public List<Tema> obtenerTemas() {
+		return this.getHibernateTemplate().find("Instalar HQL");
+
+		
+		// TODO Auto-generated method stub
+	}
+
+	@Override
+	public void registrarUsuario(Usuario usuario) {
+		this.getHibernateTemplate().save(usuario);
+
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void actualizarUsuario(Usuario usuario) {
+		this.getHibernateTemplate().update(usuario);
+
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void elimnarUsuario(Usuario usuario) {
+		this.getHibernateTemplate().delete(usuario);
+		
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public Usuario obtenerUsuario(Integer clave) {
+	    return (Usuario) this.getHibernateTemplate().get(Usuario.class,clave);
+		
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public List<Usuario> obtenerUsuarios() {
+		return this.getHibernateTemplate().find("Instalar HQL");
+	
+		// TODO Auto-generated method stub
+	
+	}
+
+	@Override
+	public void registrarPrestamo(Prestamo prestamo) {
+		this.getHibernateTemplate().save(prestamo);
+		
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void actualizarPrestamo(Prestamo prestamo) {
+		this.getHibernateTemplate().update(prestamo);
+
+		
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void eliminarPrestamo(Prestamo prestamo) {
+		this.getHibernateTemplate().delete(prestamo);
+		
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public Prestamo obtenerPrestamo(Integer clave) {
+		return (Prestamo) this.getHibernateTemplate().get(Prestamo.class,clave);
+				
+		// TODO Auto-generated method stub
+	
+	}
+
+	@Override
+	public List<Prestamo> obtenerPrestamos() {
+		return this.getHibernateTemplate().find("Instalar HQL");
+	
+		// TODO Auto-generated method stub
+	
+	}
+
+	@Override
+	public void registrarProgramaEducativo(ProgramaEducativo programaEducativo) {
+		this.getHibernateTemplate().save(programaEducativo);
+		
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void actualizarProgramaEducativo(ProgramaEducativo programaEducativo) {
+		this.getHibernateTemplate().update(programaEducativo);
+		
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void eliminarProgramaEducativo(ProgramaEducativo programaEducativo) {
+		this.getHibernateTemplate().delete(programaEducativo);
+		
+		// TODO Auto-generated method stub
+	}
+
+	@Override
+	public ProgramaEducativo obtenerProgramaEducativo(Integer clave) {
+		return(ProgramaEducativo)this.getHibernateTemplate().get(ProgramaEducativo.class,clave);
+		
+		// TODO Auto-generated method stub
+	
+	}
+
+	@Override
+	public List<ProgramaEducativo> obtenerProgramasEducativos() {
+		return this.getHibernateTemplate().find("INSTALAR HQL");
+		
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public List<ProgramaEducativo> obtenerProgramasEducativos(Tema tema) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

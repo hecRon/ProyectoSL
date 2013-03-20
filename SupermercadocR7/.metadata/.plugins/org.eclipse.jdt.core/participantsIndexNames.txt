@@ -1,0 +1,9 @@
+INDEX VERSION 1.126
+F:\TrabajoEE Videoteca\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\714480379.index
+\videoteca
+C:\Users\TOSHIBA\Documents\TrabajoEE Videoteca\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\714480379.index
+\videoteca
+C:\Users\TOSHIBA\Documents\Trabajos EE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\714480379.index
+\videoteca
+C:\Users\TOSHIBA\Documents\TrabajoEE Supermercado\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2096402726.index
+\supermercado

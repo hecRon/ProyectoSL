@@ -1,0 +1,62 @@
+package isima.videoteca.modelo.negocio;
+
+import java.io.Serializable;
+
+public class Usuario implements Serializable {
+
+	private Integer clave;
+	   /** @pdOid 055f1415-63d8-4768-a797-cd8d4225694f */
+	   private String nombre;
+	   /** @pdOid c2f54f98-4e54-4108-b607-d1ad5360e986 */
+	   private String apellido1;
+	   /** @pdOid ad819f67-599a-4377-9491-035ba5cfa80d */
+	   private String apellido2;
+	   
+	   /** @pdOid fbf7ef54-3d3e-415d-9576-721ed7d5dc65 */
+	   public Integer getClave() {
+	      return clave;
+	   }
+	   
+	  public void setClave(Integer newClave) {
+	      this.clave = clave;
+	   }
+	   
+	   /** @pdOid 93aa6f64-267a-49a4-872d-323e4e3a1235 */
+	   public String getNombre() {
+	      return nombre;
+	   }
+	   
+	   /** @param newNombre
+	    * @pdOid d2f9aea0-e598-4049-87e2-848279feaf35 */
+	   public void setNombre(String newNombre) {
+	      this.nombre = nombre;
+	   }
+	   
+	   /** @pdOid 11dd0b4e-538d-439f-bca0-95c42057b054 */
+	   public String getApellido1() {
+	      return apellido1;
+	   }
+	   
+	   /** @param newApellido1
+	    * @pdOid ad7d0027-192a-4949-8f49-a0f063d51c1f */
+	   public void setApellido1(String newApellido1) {
+	      this.apellido1 = apellido1;
+	   }
+	   
+	   /** @pdOid ff23b4c5-e8c4-4b52-b0ba-fa3a495bcb6f */
+	   public String getApellido2() {
+	      return apellido2;
+	   }
+	   
+	   /** @param newApellido2
+	    * @pdOid 0546eb51-bf07-4b3e-92e3-8732b481f62b */
+	   public void setApellido2(String newApellido2) {
+	      this.apellido2 = apellido2;
+	   }
+	   
+	   /** @pdOid ccde2db6-59f8-40af-a25d-228d3386601d */
+	   public Usuario() {
+	      // TODO: implement
+	   }
+
+	}

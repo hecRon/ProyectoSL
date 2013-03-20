@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+  "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+  "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="isima.supermercado.modelo.negocio">
+<class name="Venta" table="venta">
+<id name="clave" column="clave">
+<generator class="identity"></generator>
+</id>
+<property name="fechaVenta" column="fecha_venta" type="calendar_date" lazy="false"></property>
+<many-to-one name="articulo" column="clave_articulo" class="Articulo" lazy="false"></many-to-one>
+<many-to-one name="usuario" column="clave_usuario" class="Usuario" lazy="false"></many-to-one>
+</class>
+</hibernate-mapping>

@@ -1,0 +1,5 @@
+package isima.videoteca.modelo.negocio;
+
+public class Departamento {
+
+}

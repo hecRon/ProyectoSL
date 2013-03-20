@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<hibernate-mapping package="isima.videoteca.modelo.negocio">
+<class name="Tema" table="tema">
+<id name="clave" column="clave">
+<generator class="identity"></generator>
+</id>
+<property name="nombre" column="nombre" type="string" lazy="false"></property>
+</class>
+</hibernate-mapping>
+

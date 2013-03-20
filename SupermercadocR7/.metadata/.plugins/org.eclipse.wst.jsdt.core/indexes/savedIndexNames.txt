@@ -1,0 +1,6 @@
+INDEX VERSION 1.122+C:\Users\TOSHIBA\Documents\TrabajoEE Supermercado\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+3279788496.index
+4210378646.index
+1307208921.index
+3108884188.index
+2991450966.index

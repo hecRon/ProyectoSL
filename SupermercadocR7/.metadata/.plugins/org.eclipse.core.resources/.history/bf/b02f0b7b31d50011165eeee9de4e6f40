@@ -1,0 +1,63 @@
+package isima.videoteca.modelo.negocio;
+
+import isima.videoteca.modelo.negocio.ProgramaEducativo;
+import isima.videoteca.modelo.negocio.Usuario;
+
+import java.util.Calendar;
+
+public class Prestamos {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	private Integer clave;
+	private Calendar fechaPrestamo;
+	private Calendar fechaDevolucion;
+	private Usuario usuario;
+	private ProgramaEducativo programaEducativo;
+	
+	public Prestamos(){
+	}
+
+	public Integer getClave() {
+		return clave;
+	}
+
+	public void setClave(Integer clave) {
+		this.clave = clave;
+	}
+
+	public Calendar getFechaPrestamo() {
+		return fechaPrestamo;
+	}
+
+	public void setFechaPrestamo(Calendar fechaPrestamo) {
+		this.fechaPrestamo = fechaPrestamo;
+	}
+
+	public Calendar getFechaDevolucion() {
+		return fechaDevolucion;
+	}
+
+	public void setFechaDevolucion(Calendar fechaDevolucion) {
+		this.fechaDevolucion = fechaDevolucion;
+	}
+
+	public Usuario getUsuario() {
+		return usuario;
+	}
+
+	public void setUsuario(Usuario usuario) {
+		this.usuario = usuario;
+	}
+
+	public ProgramaEducativo getProgramaEducativo() {
+		return programaEducativo;
+	}
+
+	public void setProgramaEducativo(ProgramaEducativo programaEducativo) {
+		this.programaEducativo = programaEducativo;
+	}
+
+}

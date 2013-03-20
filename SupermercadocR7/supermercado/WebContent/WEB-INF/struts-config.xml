@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config 
+PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN"
+								"http://struts.apache.org/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+	<data-sources/>
+	<form-beans/>
+	<global-exceptions/>
+	<global-forwards/>
+	<action-mappings>
+		<action parameter="do"
+				path="/menu"
+				scope="request"
+				type="isima.supermercado.vista.actions.MenuAction"
+				validate="false">
+				
+			<forward name="registrarVenta" path="/jsp/registrarVenta.jsp"
+					 redirect="false"/>
+			<forward name="logout" path="/jsp/logout.jsp"
+					 redirect="false"/>
+			<forward name="consultarArticulo" path="/jsp/consultarArticulo.jsp"
+					 redirect="false"/>
+			<forward name="logout" path="/jsp/logout.jsp"
+					 redirect="false"/>
+			<forward name="imprimirventa" path="/jsp/imprimirVenta.jsp"
+					 redirect="false"/>
+			<forward name="logout" path="/jsp/logout.jsp"
+					 redirect="false"/>
+			
+		</action>
+		
+		
+		
+		<action parameter="do"
+				path="/articulo"
+				scope="request"
+				type="isima.supermercado.vista.actions.ArticuloAction"
+				validate="false">
+				
+		</action>
+		
+		<action parameter="do"
+				path="/venta"
+				scope="request"
+				type="isima.supermercado.vista.actions.VentaAction"
+				validate="false">
+				
+	   	</action>
+				
+		<action parameter="do"
+				path="/usuario"
+				scope="request"
+				type="isima.supermercado.vista.actions.UsuarioAction"
+				validate="false">
+				
+	   	</action>				
+	</action-mappings>	
+	<controller/>
+	<message-resources parameter="MessageResources"/>
+	<plug-in className="org.apache.struts.validator.ValidatorPlugIn">
+		<set-property property="pathnames" value="/WEB-INF/validator-rules.xml, /WEB-INF/validation.xml"/>
+	</plug-in>
+  </struts-config>

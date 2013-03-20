@@ -1,0 +1,30 @@
+.t1{
+	background-color:#0099FF;
+}
+.t2{
+	background-color:#33FF66;
+}
+.t3{
+	background-color:#FFFF00;
+}
+.e1{
+	color:#FF0000;
+}
+.e2{
+	color:#999999;
+}
+.e3{
+	color:#333333;
+}
+.e4{
+	color:#FFFF00;
+}
+
+.e1, .e2, .e3, .e4{
+	font-weight:bold;
+	cursor:pointer;
+
+}
+body{ background:url(videoteca%20Archivos/nubes.gif);
+font-family:"Bradley Hand ITC";
+color:#000;

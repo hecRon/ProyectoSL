@@ -1,0 +1,61 @@
+package isima.videoteca.modelo.negocio;
+
+import java.io.Serializable;
+import java.util.*;
+
+public class Prestamos implements Serializable {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	private Integer clave;
+	private Calendar fechaPrestamo;
+	private Calendar fechaDevolucion;
+	private Usuarios usuario;
+	private ProgramaEducativos programaEducativo;
+	
+	public Prestamos(){
+	}
+
+	public Integer getClave() {
+		return clave;
+	}
+
+	public void setClave(Integer clave) {
+		this.clave = clave;
+	}
+
+	public Calendar getFechaPrestamo() {
+		return fechaPrestamo;
+	}
+
+	public void setFechaPrestamo(Calendar fechaPrestamo) {
+		this.fechaPrestamo = fechaPrestamo;
+	}
+
+	public Calendar getFechaDevolucion() {
+		return fechaDevolucion;
+	}
+
+	public void setFechaDevolucion(Calendar fechaDevolucion) {
+		this.fechaDevolucion = fechaDevolucion;
+	}
+
+	public Usuarios getUsuario() {
+		return usuario;
+	}
+
+	public void setUsuario(Usuarios usuario) {
+		this.usuario = usuario;
+	}
+
+	public ProgramaEducativos getProgramaEducativo() {
+		return programaEducativo;
+	}
+
+	public void setProgramaEducativo(ProgramaEducativos programaEducativo) {
+		this.programaEducativo = programaEducativo;
+	}
+
+}

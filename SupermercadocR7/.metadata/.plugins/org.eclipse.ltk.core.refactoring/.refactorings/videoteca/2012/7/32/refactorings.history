@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;videoteca/src/isima/videoteca/modelo/negocio/Prestamo.xml&apos; to &apos;Prestamo.hbm.xml&apos;" description="Rename resource &apos;Prestamo.xml&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/isima/videoteca/modelo/negocio/Prestamo.xml" name="Prestamo.hbm.xml" stamp="1343660491515" updateReferences="true"/>
+</session>

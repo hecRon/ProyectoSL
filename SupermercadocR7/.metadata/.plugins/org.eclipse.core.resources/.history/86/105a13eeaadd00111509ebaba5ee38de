@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<hibernate-mapping package="isima.supermercado.modelo.negocio">
+<class name="Articulo" table="articulo">
+<id name="clave" column="clave">
+<generator class="identity"></generator>
+</id>
+<property name="nombre" column="nombre" type="string" lazy="false"></property>
+<property name="disponibles" column="disponibles" type="integer" lazy="false"></property>
+<property name="precio" column="precio" type="integer" lazy="false"></property>
+<many-to-one name="departamento" column="clave_dep" class="Departamento" lazy="false"></many-to-one>
+</class>
+</hibernate-mapping>
+

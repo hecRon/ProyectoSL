@@ -1,0 +1,11 @@
+package isima.videoteca.modelo.dao;
+
+import isima.videoteca.modelo.negocio.Tema;
+
+public interface VideotecaDAO {
+
+	void registrarTema(Tema tema);
+	void actualizarTema(Tema tema);
+	
+	
+}
